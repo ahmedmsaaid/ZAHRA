@@ -1,4 +1,8 @@
-import 'package:style/core/widgets/custom_app_bar.dart';
+import 'package:base_app/core/extintions/extintios.dart';
+import 'package:base_app/core/localizations/app_strings.g.dart';
+import 'package:base_app/core/styles/app_colors.dart';
+import 'package:base_app/core/styles/app_text_style.dart';
+import 'package:base_app/core/widgets/custom_app_bar.dart';
 
 import '../../../../core/exports/exports.dart';
 

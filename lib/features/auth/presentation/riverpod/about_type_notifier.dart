@@ -1,5 +1,5 @@
 import 'package:flutter_riverpod/legacy.dart';
-import 'package:style/core/localizations/app_strings.g.dart';
+import 'package:base_app/core/localizations/app_strings.g.dart';
 
 import '../../../../core/services/image_picker_service.dart';
 import '../../domain/service_entity.dart';

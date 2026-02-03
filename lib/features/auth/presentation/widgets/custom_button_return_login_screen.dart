@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:style/core/utils/extensions.dart';
+import 'package:base_app/core/utils/extensions.dart';
 
 import '../../../../core/localizations/app_strings.g.dart';
 import '../../../../core/routes/app_routes.dart';

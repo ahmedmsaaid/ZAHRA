@@ -1,6 +1,11 @@
+import 'package:base_app/core/localizations/app_strings.g.dart';
+import 'package:base_app/core/routes/app_routes.dart';
+import 'package:base_app/core/styles/app_text_style.dart';
+import 'package:base_app/core/utils/assets/app_icons.dart';
+import 'package:base_app/core/utils/extensions.dart';
 import 'package:easy_localization/easy_localization.dart';
-import 'package:style/core/localizations/localization_provider.dart';
-import 'package:style/core/services/cach_helper/cache_helper_keys.dart';
+import 'package:base_app/core/localizations/localization_provider.dart';
+import 'package:base_app/core/services/cach_helper/cache_helper_keys.dart';
 
 import '../../../../core/exports/exports.dart';
 import '../../../../core/services/cach_helper/cache_helper.dart';

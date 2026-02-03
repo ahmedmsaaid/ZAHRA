@@ -1,3 +1,7 @@
+import 'package:base_app/core/localizations/app_strings.g.dart';
+import 'package:base_app/core/routes/app_routes.dart';
+import 'package:base_app/core/utils/extensions.dart';
+
 import '../../../../core/exports/exports.dart';
 import '../../../../core/widgets/custom_app_bar.dart';
 import '../widgets/service_provider_selection_widget.dart';

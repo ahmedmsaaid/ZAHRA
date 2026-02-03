@@ -1,6 +1,6 @@
-import 'package:style/core/models/booking_day_model.dart';
-import 'package:style/core/models/salon_model.dart';
-import 'package:style/core/utils/assets/app_images.dart';
+import 'package:base_app/core/models/booking_day_model.dart';
+import 'package:base_app/core/models/salon_model.dart';
+import 'package:base_app/core/utils/assets/app_images.dart';
 
 final List<SalonModel> salons = [
   SalonModel(

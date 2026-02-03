@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:style/core/styles/app_colors.dart';
-import 'package:style/core/utils/assets/app_icons.dart';
-import 'package:style/core/widgets/custome_svg_image.dart';
+import 'package:base_app/core/styles/app_colors.dart';
+import 'package:base_app/core/utils/assets/app_icons.dart';
+import 'package:base_app/core/widgets/custome_svg_image.dart';
 
 import '../extintions/navigation_extension.dart';
 

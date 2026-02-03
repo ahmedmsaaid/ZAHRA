@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/legacy.dart';
-import 'package:style/core/services/cach_helper/cache_helper.dart';
-import 'package:style/core/services/cach_helper/cache_helper_keys.dart';
+import 'package:base_app/core/services/cach_helper/cache_helper.dart';
+import 'package:base_app/core/services/cach_helper/cache_helper_keys.dart';
 
 // ===== Theme Notifier =====
 class ThemeNotifier extends StateNotifier<ThemeMode> {
