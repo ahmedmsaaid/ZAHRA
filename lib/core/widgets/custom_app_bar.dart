@@ -1,6 +1,6 @@
-import 'package:base_app/core/styles/app_colors.dart';
-import 'package:base_app/core/styles/app_text_style.dart';
-import 'package:base_app/core/widgets/custom_arrow_back.dart';
+import 'package:zahra/core/styles/app_colors.dart';
+import 'package:zahra/core/styles/app_text_style.dart';
+import 'package:zahra/core/widgets/custom_arrow_back.dart';
 
 import '../exports/exports.dart';
 
@@ -18,6 +18,8 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   final Widget? leadingWidget;
   final VoidCallback? onTitleTap;
   final bool isCircularIcon;
+  final List<Widget>? actions;
+  final Widget? customLeading;
 
   const CustomAppBar({
     super.key,
@@ -34,6 +36,8 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
     this.appBarColor,
     this.leadingWidget,
     this.isCircularIcon = false,
+    this.actions,
+    this.customLeading,
   });
 
   @override
@@ -50,20 +54,35 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       scrolledUnderElevation: 0,
       surfaceTintColor: Colors.transparent,
       leadingWidth: showLeading ? 55.w : 0,
-      actions: [
-        Padding(
-          padding: EdgeInsetsDirectional.symmetric(
-            horizontal: 12.w,
-            vertical: 10.h,
-          ),
-          child: CustomArrowBack(
-            isCircular: isCircularIcon,
-            onTap: onTrailingTap ?? () => Navigator.pop(context),
-            color: AppColors(context).primaryVariant.withAlpha(30),
-          ),
-        ),
-      ],
-
+      leading: showLeading
+          ? (customLeading ??
+              leadingWidget ??
+              Padding(
+                padding: EdgeInsetsDirectional.only(start: 12.w),
+                child: Center(
+                  child: CustomArrowBack(
+                    isCircular: isCircularIcon,
+                    onTap: onLeadingTap ?? () => Navigator.pop(context),
+                    color: AppColors(context).primaryVariant.withAlpha(30),
+                  ),
+                ),
+              ))
+          : null,
+      actions: actions ??
+          [
+            if (showTrailing)
+              Padding(
+                padding: EdgeInsetsDirectional.symmetric(
+                  horizontal: 12.w,
+                  vertical: 10.h,
+                ),
+                child: CustomArrowBack(
+                  isCircular: isCircularIcon,
+                  onTap: onTrailingTap ?? () => Navigator.pop(context),
+                  color: AppColors(context).primaryVariant.withAlpha(30),
+                ),
+              ),
+          ],
       title: GestureDetector(
         onTap: onTitleTap,
         child: Text(

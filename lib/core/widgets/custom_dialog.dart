@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:base_app/core/styles/old_text_style.dart';
+import 'package:zahra/core/styles/old_text_style.dart';
 
 import '../../core/exports/exports.dart';
 import '../../core/styles/app_colors.dart';
@@ -83,7 +83,7 @@ class CustomDialog extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final colors = AppColors(context);
-    final textStyles = OldTextStyle(context);
+    final textStyles = AppTextStyle(context);
     final typeColor = _typeColor(context);
 
     return Dialog(

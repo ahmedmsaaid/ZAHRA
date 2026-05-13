@@ -1,9 +1,9 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:base_app/core/localizations/app_strings.g.dart';
-import 'package:base_app/core/styles/app_colors.dart';
-import 'package:base_app/core/styles/app_text_style.dart';
+import 'package:zahra/core/localizations/app_strings.g.dart';
+import 'package:zahra/core/styles/app_colors.dart';
+import 'package:zahra/core/styles/app_text_style.dart';
 
 class DropDownModel {
   final String id;

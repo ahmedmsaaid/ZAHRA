@@ -1,7 +1,7 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:base_app/core/utils/extensions.dart';
+import 'package:zahra/core/utils/extensions.dart';
 
 import '../../../../core/localizations/localization_provider.dart';
 import '../../../../core/routes/app_routes.dart';
@@ -39,7 +39,7 @@ class _SplashScreenState extends ConsumerState<SplashScreen> {
           CacheHelper.getBool(CacheKeys.isFirstTime) == null) {
         context.pushNamedAndRemoveUntil(AppRoutes.onBoarding);
       } else {
-        context.pushNamedAndRemoveUntil(AppRoutes.onBoarding);
+        context.pushNamedAndRemoveUntil(AppRoutes.loginScreen);
       }
     });
     super.initState();
@@ -54,8 +54,8 @@ class _SplashScreenState extends ConsumerState<SplashScreen> {
           Center(
             child: Image.asset(
               CacheHelper.isDarkMode
-                  ? AppImages.styleImageDark
-                  : AppImages.styleImage,
+                  ? AppImages.splash
+                  : AppImages.splash,
             ),
           ),
 

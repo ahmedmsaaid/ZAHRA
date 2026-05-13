@@ -9,19 +9,16 @@ class AppLocalizationsConstants {
   AppLocalizationsConstants._internal() {
     arLocale = Locale(arLanguage, arRegion);
     enLocale = Locale(enLanguage, enRegion);
-    trLocale = Locale(trLanguage, trRegion);
-    supportedLocales = [arLocale, enLocale, trLocale];
+    supportedLocales = [arLocale, enLocale];
   }
 
   // Languages
   final String arLanguage = 'ar';
   final String enLanguage = 'en';
-  final String trLanguage = 'tr';
 
   // Regions
-  final String arRegion = 'IQ'; // العراق
+  final String arRegion = 'EG';
   final String enRegion = 'US';
-  final String trRegion = 'TR';
 
   // Path
   final String path = "assets/translations";
@@ -29,6 +26,5 @@ class AppLocalizationsConstants {
   // Locales
   late final Locale arLocale;
   late final Locale enLocale;
-  late final Locale trLocale;
   late final List<Locale> supportedLocales;
 }

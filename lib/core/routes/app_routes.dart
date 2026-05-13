@@ -19,6 +19,10 @@ class AppRoutes {
   static const String packages = '/packages';
   static const String packageDetails = '/packageDetails';
   static const String settings = '/settings';
+  static const String reminders = '/reminders';
+  static const String healthReports = '/healthReports';
+  static const String personalInformation = '/personalInformation';
+  static const String cycleHistory = '/cycleHistory';
   static const String privacyPolicy = '/privacyPolicy';
   static const String accountSettings = '/accountSettings';
   static const String aboutPlace = '/aboutPlace';
@@ -36,4 +40,6 @@ class AppRoutes {
   static const String chatDetailsScreen = '/chatDetailsScreen';
   static const String storeProductDetailsScreen = '/storeProductDetailsScreen';
   static const String cartScreen = '/cartScreen';
-}
+  static const String home = '/home';
+  static const String calendar = '/calendar';
+ }

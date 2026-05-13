@@ -1,5 +1,5 @@
-import 'package:base_app/core/localizations/app_strings.g.dart';
-import 'package:base_app/core/utils/assets/app_icons.dart';
+import 'package:zahra/core/localizations/app_strings.g.dart';
+import 'package:zahra/core/utils/assets/app_icons.dart';
 
 import '../../../../core/exports/exports.dart';
 import 'custom_user_type_card.dart';

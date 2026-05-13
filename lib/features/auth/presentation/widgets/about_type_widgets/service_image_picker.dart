@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:base_app/core/extintions/navigation_extension.dart';
+import 'package:zahra/core/extintions/navigation_extension.dart';
 
 import '../../../../../core/localizations/app_strings.g.dart';
 import '../../../../../core/styles/app_colors.dart';

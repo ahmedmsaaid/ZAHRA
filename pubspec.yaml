@@ -1,4 +1,4 @@
-name: base_app
+name: zahra
 description: "Base Flutter project."
 
 publish_to: 'none'
@@ -83,7 +83,7 @@ flutter:
     - assets/fonts/
     - assets/icons/
     - assets/animation/
-    - assets/demo/
+
 
 
 

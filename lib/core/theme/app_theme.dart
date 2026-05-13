@@ -2,62 +2,127 @@ import 'package:flutter/material.dart';
 
 class AppTheme {
   static ThemeData lightTheme() {
+    const primary = Color(0xFFFF6E8C); // وردي
+    const fertile = Color(0xFF4AD19F); // أخضر خصوبة
+    const bg = Color(0xFFFFF6F8);      // خلفية فاتحة ناعمة
+    const surface = Color(0xFFFFFFFF);
+
     return ThemeData(
       useMaterial3: true,
       brightness: Brightness.light,
-      scaffoldBackgroundColor: const Color(0xFFFFFFFF),
-      primaryColor: const Color(0xFF7C4DFF),
+      scaffoldBackgroundColor: bg,
+      primaryColor: primary,
 
       colorScheme: const ColorScheme.light(
-        primary: Color(0xFF7C4DFF),
-        secondary: Color(0xFFFF5722),
-        surface: Color(0xFFF5F5F5),
+        primary: primary,
+        secondary: fertile,
+        surface: surface,
+        background: bg,
         error: Color(0xFFD32F2F),
       ),
 
       appBarTheme: const AppBarTheme(
-        backgroundColor: Color(0xFFFFFFFF),
-        foregroundColor: Color(0xDD000000),
+        backgroundColor: bg,
+        foregroundColor: Color(0xFF2A1335),
         elevation: 0,
         centerTitle: true,
       ),
 
       cardTheme: CardThemeData(
-        color: const Color(0xFFFFFFFF),
-        elevation: 2,
+        color: surface,
+        elevation: 0,
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(12),
+          borderRadius: BorderRadius.circular(20),
         ),
+      ),
+
+      textTheme: const TextTheme(
+        titleLarge: TextStyle(
+          fontSize: 24,
+          fontWeight: FontWeight.w700,
+          color: Color(0xFF2A1335),
+        ),
+        bodyMedium: TextStyle(
+          fontSize: 14,
+          color: Color(0xFF6B4C80),
+        ),
+      ),
+
+      filledButtonTheme: FilledButtonThemeData(
+        style: FilledButton.styleFrom(
+          backgroundColor: primary,
+          foregroundColor: Colors.white,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(24),
+          ),
+          padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 14),
+        ),
+      ),
+
+      pageTransitionsTheme: const PageTransitionsTheme(
+        builders: {
+          TargetPlatform.android: CupertinoPageTransitionsBuilder(),
+          TargetPlatform.iOS: CupertinoPageTransitionsBuilder(),
+        },
       ),
     );
   }
 
   static ThemeData darkTheme() {
+    const primary = Color(0xFFFF8FA8);
+    const fertile = Color(0xFF4AD19F);
+    const bg = Color(0xFF120718);
+    const surface = Color(0xFF1F1029);
+
     return ThemeData(
       useMaterial3: true,
       brightness: Brightness.dark,
-      scaffoldBackgroundColor: const Color(0xFF121212),
-      primaryColor: const Color(0xFF9C6FDE),
+      scaffoldBackgroundColor: bg,
+      primaryColor: primary,
 
       colorScheme: const ColorScheme.dark(
-        primary: Color(0xFF9C6FDE),
-        secondary: Color(0xFFFF7043),
-        surface: Color(0xFF1E1E1E),
-        error: Color(0xFFD32F2F),
+        primary: primary,
+        secondary: fertile,
+        surface: surface,
+        background: bg,
+        error: Color(0xFFFF6E6E),
       ),
 
       appBarTheme: const AppBarTheme(
-        backgroundColor: Color(0xFF121212),
-        foregroundColor: Color(0xFFFFFFFF),
+        backgroundColor: bg,
+        foregroundColor: Colors.white,
         elevation: 0,
         centerTitle: true,
       ),
 
       cardTheme: CardThemeData(
-        color: const Color(0xFF2A2A2A),
-        elevation: 2,
+        color: surface,
+        elevation: 0,
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(12),
+          borderRadius: BorderRadius.circular(20),
+        ),
+      ),
+
+      textTheme: const TextTheme(
+        titleLarge: TextStyle(
+          fontSize: 24,
+          fontWeight: FontWeight.w700,
+          color: Colors.white,
+        ),
+        bodyMedium: TextStyle(
+          fontSize: 14,
+          color: Color(0xFFE2C8F5),
+        ),
+      ),
+
+      filledButtonTheme: FilledButtonThemeData(
+        style: FilledButton.styleFrom(
+          backgroundColor: primary,
+          foregroundColor: Colors.white,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(24),
+          ),
+          padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 14),
         ),
       ),
     );

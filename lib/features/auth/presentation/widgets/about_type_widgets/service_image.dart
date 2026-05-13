@@ -1,7 +1,7 @@
 // lib/features/auth/presentation/widgets/service_image.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:base_app/features/auth/domain/service_entity.dart';
+import 'package:zahra/features/auth/domain/service_entity.dart';
 
 import '../../../../../core/styles/app_colors.dart';
 

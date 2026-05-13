@@ -1,7 +1,7 @@
 // lib/features/auth/presentation/widgets/service_preview_card.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:base_app/features/auth/presentation/widgets/about_type_widgets/service_info.dart';
+import 'package:zahra/features/auth/presentation/widgets/about_type_widgets/service_info.dart';
 
 import '../../../../../core/styles/app_colors.dart';
 import '../../../domain/service_entity.dart';

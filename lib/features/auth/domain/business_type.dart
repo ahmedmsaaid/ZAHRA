@@ -1,5 +1,5 @@
 // lib/features/auth/presentation/models/business_type.dart
-import 'package:base_app/core/localizations/app_strings.g.dart';
+import 'package:zahra/core/localizations/app_strings.g.dart';
 
 enum BusinessType {
   salon,

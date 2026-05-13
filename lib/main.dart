@@ -3,12 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hive_ce_flutter/adapters.dart';
-import 'package:base_app/core/constans/app_localizations_constants.dart';
-import 'package:base_app/core/routes/app_router.dart';
-import 'package:base_app/core/routes/app_routes.dart';
-import 'package:base_app/core/services/cach_helper/cache_helper.dart';
-import 'package:base_app/core/theme/app_theme.dart';
-import 'package:base_app/core/theme/theme_provider.dart';
+import 'package:zahra/core/constans/app_localizations_constants.dart';
+import 'package:zahra/core/routes/app_router.dart';
+import 'package:zahra/core/routes/app_routes.dart';
+import 'package:zahra/core/services/cach_helper/cache_helper.dart';
+import 'package:zahra/core/theme/app_theme.dart';
+import 'package:zahra/core/theme/theme_provider.dart';
 
 GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
 

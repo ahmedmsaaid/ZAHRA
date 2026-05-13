@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:base_app/core/localizations/app_strings.g.dart';
+import 'package:zahra/core/localizations/app_strings.g.dart';
 
 import '../../../../../core/widgets/custom_toast.dart';
 import '../../../domain/service_entity.dart';

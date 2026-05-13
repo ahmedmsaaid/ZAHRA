@@ -2,24 +2,25 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'app_colors.dart';
 
-class OldTextStyle {
+class AppTextStyle {
   final BuildContext context;
   late final AppColors _colors;
 
-  OldTextStyle(this.context) {
+  AppTextStyle(this.context) {
     _colors = AppColors(context);
   }
 
   // ===== Headings =====
   TextStyle get heading => TextStyle(
-    fontSize: 22.sp,
-    fontWeight: FontWeight.bold,
+    fontSize: 24.sp,
+    fontWeight: FontWeight.w700,
+    letterSpacing: 0.2,
     color: _colors.textPrimary,
   );
 
   TextStyle get title => TextStyle(
     fontSize: 22.sp,
-    fontWeight: FontWeight.bold,
+    fontWeight: FontWeight.w600,
     color: _colors.textPrimary,
   );
 
@@ -32,27 +33,32 @@ class OldTextStyle {
   // ===== Body Text =====
   TextStyle get body => TextStyle(
     fontSize: 16.sp,
+    height: 1.4,
     color: _colors.textPrimary,
   );
 
   TextStyle get bodyMedium => TextStyle(
     fontSize: 14.sp,
+    height: 1.4,
     color: _colors.textPrimary,
   );
 
   TextStyle get bodySmall => TextStyle(
     fontSize: 12.sp,
+    height: 1.4,
     color: _colors.textPrimary,
   );
 
   // ===== Subtitle & Secondary =====
   TextStyle get subtitle => TextStyle(
     fontSize: 16.sp,
+    height: 1.4,
     color: _colors.textSecondary,
   );
 
   TextStyle get info => TextStyle(
     fontSize: 14.sp,
+    height: 1.4,
     color: _colors.textSecondary,
   );
 
@@ -70,39 +76,15 @@ class OldTextStyle {
   // ===== AppBar =====
   TextStyle get appBarTitle => TextStyle(
     fontSize: 20.sp,
-    fontWeight: FontWeight.bold,
+    fontWeight: FontWeight.w700,
     color: _colors.textPrimary,
-  );
-
-  // ===== Price & Discount =====
-  TextStyle get price => TextStyle(
-    fontSize: 20.sp,
-    fontWeight: FontWeight.bold,
-    color: _colors.price,
-  );
-
-  TextStyle get priceSmall => TextStyle(
-    fontSize: 16.sp,
-    fontWeight: FontWeight.bold,
-    color: _colors.price,
-  );
-
-  TextStyle get discount => TextStyle(
-    fontSize: 16.sp,
-    color: _colors.discount,
-    fontWeight: FontWeight.w500,
-  );
-
-  TextStyle get priceOld => TextStyle(
-    fontSize: 14.sp,
-    color: _colors.priceOld,
-    decoration: TextDecoration.lineThrough,
   );
 
   // ===== Button Text =====
   TextStyle get buttonText => TextStyle(
     fontSize: 16.sp,
     fontWeight: FontWeight.w600,
+    letterSpacing: 0.3,
     color: AppColors.white,
   );
 
@@ -118,26 +100,9 @@ class OldTextStyle {
     color: _colors.primary,
   );
 
-  // ===== Review Text =====
-  TextStyle get reviewName => TextStyle(
-    fontSize: 14.sp,
-    fontWeight: FontWeight.w500,
-    color: _colors.textPrimary,
-  );
-
-  TextStyle get reviewComment => TextStyle(
-    fontSize: 13.sp,
-    color: _colors.textSecondary,
-  );
-
-  TextStyle get reviewDate => TextStyle(
-    fontSize: 12.sp,
-    color: _colors.textHint,
-  );
-
-  // ===== Special Text =====
+  // ===== Special / Status =====
   TextStyle get badge => TextStyle(
-    fontSize: 12.sp,
+    fontSize: 11.sp,
     fontWeight: FontWeight.w600,
     color: AppColors.white,
   );
@@ -149,12 +114,12 @@ class OldTextStyle {
   );
 
   TextStyle get error => TextStyle(
-    fontSize: 14.sp,
+    fontSize: 13.sp,
     color: _colors.error,
   );
 
   TextStyle get success => TextStyle(
-    fontSize: 14.sp,
+    fontSize: 13.sp,
     color: _colors.success,
   );
 
@@ -162,10 +127,11 @@ class OldTextStyle {
   TextStyle get link => TextStyle(
     fontSize: 14.sp,
     color: _colors.primary,
+    fontWeight: FontWeight.w500,
     decoration: TextDecoration.underline,
   );
 
-  // ===== Rating Text =====
+  // ===== Rating Text (لو استخدمتيها في الريفيوز مثلاً) =====
   TextStyle get ratingText => TextStyle(
     fontSize: 14.sp,
     fontWeight: FontWeight.w600,
@@ -177,4 +143,3 @@ class OldTextStyle {
     color: _colors.textSecondary,
   );
 }
-

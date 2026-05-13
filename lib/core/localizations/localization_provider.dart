@@ -1,6 +1,6 @@
+import 'package:zahra/core/constans/app_localizations_constants.dart';
 import 'package:flutter/material.dart';
 import 'package:riverpod/legacy.dart';
-import 'package:base_app/core/constans/app_localizations_constants.dart';
 
 import '../services/cach_helper/cache_helper.dart';
 import '../services/cach_helper/cache_helper_keys.dart';
@@ -19,6 +19,9 @@ class LocalizationNotifier extends StateNotifier<Locale> {
       if (parts.length == 2) {
         state = Locale(parts[0], parts[1]);
       }
+    } else {
+      // Set default to Arabic if no locale is saved
+      await changeToArabic();
     }
   }
 
@@ -42,15 +45,9 @@ class LocalizationNotifier extends StateNotifier<Locale> {
     await changeLocale(AppLocalizationsConstants().enLocale);
   }
 
-  Future<void> changeToTurkish() async {
-    await changeLocale(AppLocalizationsConstants().trLocale);
-  }
-
   bool get isArabic => state.languageCode == 'ar';
 
   bool get isEnglish => state.languageCode == 'en';
-
-  bool get isTurkish => state.languageCode == 'tr';
 }
 
 // ===== Localization Provider =====

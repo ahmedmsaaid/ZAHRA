@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:base_app/core/styles/old_text_style.dart';
+import 'package:zahra/core/styles/old_text_style.dart';
 
 import '../styles/app_colors.dart';
 
@@ -22,7 +22,7 @@ class CustomToast {
     }
 
     final colors = AppColors(context);
-    final textStyles = OldTextStyle(context);
+    final textStyles = AppTextStyle(context);
 
     _overlayEntry = OverlayEntry(
       builder: (context) => _ToastWidget(
@@ -112,7 +112,7 @@ class _ToastWidget extends StatefulWidget {
   final String message;
   final ToastType type;
   final AppColors colors;
-  final OldTextStyle textStyles;
+  final AppTextStyle textStyles;
   final bool showCloseButton;
   final VoidCallback onClose;
 

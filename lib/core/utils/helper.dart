@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:base_app/main.dart';
+import 'package:zahra/main.dart';
 
 import '../styles/app_colors.dart';
 

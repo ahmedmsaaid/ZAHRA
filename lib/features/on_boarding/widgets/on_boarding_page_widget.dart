@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:base_app/core/styles/app_colors.dart';
-import 'package:base_app/core/styles/app_text_style.dart';
+import 'package:zahra/core/styles/app_colors.dart';
+import 'package:zahra/core/styles/app_text_style.dart';
 
 import '../../../core/exports/exports.dart';
 import '../data/models/on_boarding_model.dart';
@@ -47,13 +47,13 @@ class OnboardingPageWidget extends StatelessWidget {
                     child: Image.asset(page.mainImage, fit: BoxFit.contain),
                   ),
                 ),
-
-                Positioned(
-                  bottom: 10.h,
-                  left: 20.w,
-                  right: 20.w,
-                  child: Image.asset(page.smallImage, fit: BoxFit.cover),
-                ),
+                //
+                // Positioned(
+                //   bottom: 10.h,
+                //   left: 20.w,
+                //   right: 20.w,
+                //   child: Image.asset(page.smallImage, fit: BoxFit.cover),
+                // ),
               ],
             ),
           ),

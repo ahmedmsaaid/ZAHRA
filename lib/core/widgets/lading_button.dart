@@ -1,5 +1,5 @@
 import 'package:lottie/lottie.dart';
-import 'package:base_app/core/utils/assets/app_assets.dart';
+import 'package:zahra/core/utils/assets/app_assets.dart';
 
 import '../exports/exports.dart';
 

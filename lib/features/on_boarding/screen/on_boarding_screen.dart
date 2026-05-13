@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:base_app/core/utils/extensions.dart';
+import 'package:zahra/core/services/cach_helper/cache_helper.dart';
+import 'package:zahra/core/services/cach_helper/cache_helper_keys.dart';
+import 'package:zahra/core/utils/extensions.dart';
 
 import '../../../core/routes/app_routes.dart';
 import '../data/models/on_boarding_model.dart';
@@ -77,7 +79,8 @@ class _OnboardingScreenState extends State<OnboardingScreen>
 
   Future<void> _completeOnboarding() async {
     if (mounted) {
-      context.pushNamed(AppRoutes.chooseYourLanguageScreen);
+      await CacheHelper.setBool(CacheKeys.isFirstTime, false);
+      context.pushNamedAndRemoveUntil(AppRoutes.loginScreen);
     }
   }
 

@@ -4,13 +4,13 @@
 
 import 'package:easy_localization/easy_localization.dart';
 
-abstract class  AppStrings {
-  static String get bookYourViewEasily => 'bookYourViewEasily'.tr();
-  static String get accurateTimesClearPricesEffortlessBooking => 'accurateTimesClearPricesEffortlessBooking'.tr();
-  static String get momentsOfCalm => 'momentsOfCalm'.tr();
-  static String get relaxingMassageDescription => 'relaxingMassageDescription'.tr();
-  static String get yourBeautyStartsHere => 'yourBeautyStartsHere'.tr();
-  static String get chooseYourHairstyleDescription => 'chooseYourHairstyleDescription'.tr();
+abstract class AppStrings {
+  static String get trackYourCycle => 'trackYourCycle'.tr();
+  static String get trackYourCycleDescription => 'trackYourCycleDescription'.tr();
+  static String get knowYourFertility => 'knowYourFertility'.tr();
+  static String get knowYourFertilityDescription => 'knowYourFertilityDescription'.tr();
+  static String get logSymptomsAndMood => 'logSymptomsAndMood'.tr();
+  static String get logSymptomsAndMoodDescription => 'logSymptomsAndMoodDescription'.tr();
   static String get next => 'next'.tr();
   static String get skip => 'skip'.tr();
   static String get day => 'day'.tr();
@@ -231,10 +231,73 @@ abstract class  AppStrings {
   static String get visits => 'visits'.tr();
   static String get bookings => 'bookings'.tr();
   static String get cancelled => 'cancelled'.tr();
-  static String get personalInformation => 'personalInformation'.tr();
   static String get messaging => 'messaging'.tr();
   static String get newChats => 'newChats'.tr();
   static String get addToCart => 'addToCart'.tr();
+  static String get currentCycleDay => 'currentCycleDay'.tr();
+  static String get phaseOvulation => 'phaseOvulation'.tr();
+  static String get phaseLuteal => 'phaseLuteal'.tr();
+  static String get phaseMenstrual => 'phaseMenstrual'.tr();
+  static String get daysRemaining => 'daysRemaining'.tr();
+  static String get fertileWindow => 'fertileWindow'.tr();
+  static String get nextPeriod => 'nextPeriod'.tr();
+  static String get averageLength => 'averageLength'.tr();
+  static String get ovulationTip => 'ovulationTip'.tr();
+  static String get reminders => 'reminders'.tr();
+  static String get pillReminder => 'pillReminder'.tr();
+  static String get medicineReminder => 'medicineReminder'.tr();
+  static String get waterReminder => 'waterReminder'.tr();
+  static String get helpCenter => 'helpCenter'.tr();
+  static String get healthReports => 'healthReports'.tr();
+  static String get cycleHistory => 'cycleHistory'.tr();
+  static String get profileSettings => 'profileSettings'.tr();
+  static String get appSettings => 'appSettings'.tr();
+  static String get addReminder => 'addReminder'.tr();
+  static String get darkMode => 'darkMode'.tr();
+  static String get symptomCramps => 'symptomCramps'.tr();
+  static String get symptomHeadache => 'symptomHeadache'.tr();
+  static String get symptomFatigue => 'symptomFatigue'.tr();
+  static String get symptomBloating => 'symptomBloating'.tr();
+  static String get month1 => 'month1'.tr();
+  static String get month2 => 'month2'.tr();
+  static String get month3 => 'month3'.tr();
+  static String get month4 => 'month4'.tr();
+  static String get month5 => 'month5'.tr();
+  static String get month6 => 'month6'.tr();
+  static String get month7 => 'month7'.tr();
+  static String get month8 => 'month8'.tr();
+  static String get month9 => 'month9'.tr();
+  static String get month10 => 'month10'.tr();
+  static String get month11 => 'month11'.tr();
+  static String get month12 => 'month12'.tr();
+  static String get monthlySummary => 'monthlySummary'.tr();
+  static String get monthlySummaryDesc => 'monthlySummaryDesc'.tr();
+  static String get fertilityTrends => 'fertilityTrends'.tr();
+  static String get fertilityTrendsDesc => 'fertilityTrendsDesc'.tr();
+  static String get downloadPDF => 'downloadPDF'.tr();
+  static String get saveSymptoms => 'saveSymptoms'.tr();
+  static String get dailyTip => 'dailyTip'.tr();
+  static String get reportGenerated => 'reportGenerated'.tr();
+  static String get userName => 'userName'.tr();
+  static String get interactiveCalendarComingSoon => 'interactiveCalendarComingSoon'.tr();
+  static String get personalInformation => 'personalInformation'.tr();
+  static String get email => 'email'.tr();
+  static String get cycleStart => 'cycleStart'.tr();
+  static String get duration => 'duration'.tr();
+  static String get days => 'days'.tr();
+  static String get periodLength => 'periodLength'.tr();
+  static String get previousCycles => 'previousCycles'.tr();
+  static String get newMedication => 'newMedication'.tr();
+  static String get medication => 'medication'.tr();
+  static String get yes => 'yes'.tr();
+  static String get no => 'no'.tr();
   static String get writeComment => 'writeComment'.tr();
 
+
+  // Custom Methods for keys with arguments
+  static String symptomsSaved(String date) => 'symptomsSaved'.tr(args: [date]);
+  static String daysOfDays(String day, String total) => 'daysOfDays'.tr(args: [day, total]);
+  static String daysRemainingText(String days) => 'daysRemainingText'.tr(args: [days]);
+  static String dailyAt(String time) => 'dailyAt'.tr(args: [time]);
+  static String monthName(int m) => 'month$m'.tr();
 }

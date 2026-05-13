@@ -1,5 +1,5 @@
 import 'package:shimmer/shimmer.dart';
-import 'package:base_app/core/styles/app_colors.dart';
+import 'package:zahra/core/styles/app_colors.dart';
 import '../../../core/exports/exports.dart';
 
 enum ShimmerType { list, grid }

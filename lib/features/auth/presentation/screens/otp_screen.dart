@@ -2,9 +2,9 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_otp_text_field/flutter_otp_text_field.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:base_app/core/localizations/app_strings.g.dart';
-import 'package:base_app/core/utils/assets/app_icons.dart';
-import 'package:base_app/core/utils/extensions.dart';
+import 'package:zahra/core/localizations/app_strings.g.dart';
+import 'package:zahra/core/utils/assets/app_icons.dart';
+import 'package:zahra/core/utils/extensions.dart';
 
 import '../../../../core/routes/app_routes.dart';
 import '../../../../core/styles/app_colors.dart';

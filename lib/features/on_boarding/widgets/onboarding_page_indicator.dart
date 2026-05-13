@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
-import 'package:base_app/core/styles/app_colors.dart';
+import 'package:zahra/core/styles/app_colors.dart';
 
 class OnboardingPageIndicator extends StatelessWidget {
   final int currentPage;

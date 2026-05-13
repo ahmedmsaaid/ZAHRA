@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:base_app/core/styles/app_colors.dart';
-import 'package:base_app/core/utils/assets/app_icons.dart';
-import 'package:base_app/core/widgets/custome_svg_image.dart';
+import 'package:zahra/core/styles/app_colors.dart';
+import 'package:zahra/core/utils/assets/app_icons.dart';
+import 'package:zahra/core/widgets/custome_svg_image.dart';
 
 import '../extintions/navigation_extension.dart';
 
@@ -20,8 +20,6 @@ class CustomArrowBack extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final isRtl = Directionality.of(context) == TextDirection.rtl;
-
     return GestureDetector(
       onTap: onTap ?? () => context.pop(),
       child: Container(
@@ -35,19 +33,11 @@ class CustomArrowBack extends StatelessWidget {
           color: color ?? AppColors(context).primaryVariant.withOpacity(0.1),
           borderRadius: BorderRadius.circular(isCircular ? 60.r : 10.r),
         ),
-        child: Transform(
-          alignment: Alignment.center,
-          transform:
-              isRtl
-                    ? Matrix4.identity() // في RTL خليه زي ما هو (سهم لليسار)
-                    : Matrix4.identity()
-                ..scale(-1.0, 1.0, 1.0), // في LTR اقلبه
-          child: CustomSVGImage(
-            matchTextDirection: true,
-            asset: AppIcons.arrowIcon,
+        child: Center(
+          child: Icon(
+            Icons.arrow_back_ios_new,
+            size: isCircular ? 20.sp : 16.sp,
             color: AppColors(context).primaryVariant,
-            height: isCircular ? 22.sp : 18.sp,
-            width: isCircular ? 22.sp : 18.sp,
           ),
         ),
       ),

@@ -17,21 +17,21 @@ class OnBoardingModel {
 
 List<OnBoardingModel> onboardingPages() => [
   OnBoardingModel(
-    title: AppStrings.bookYourViewEasily,
-    description: AppStrings.accurateTimesClearPricesEffortlessBooking,
-    mainImage: AppImages.coverOnBoarding1,
+    title: AppStrings.trackYourCycle,
+    description: AppStrings.trackYourCycleDescription,
+    mainImage: AppImages.logo,
     smallImage: AppImages.profileOnBoarding1,
   ),
   OnBoardingModel(
-    title: AppStrings.yourBeautyStartsHere,
-    description: AppStrings.chooseYourHairstyleDescription,
-    mainImage: AppImages.coverOnBoarding2,
+    title: AppStrings.knowYourFertility,
+    description: AppStrings.knowYourFertilityDescription,
+    mainImage: AppImages.logo,
     smallImage: AppImages.profileOnBoarding2,
   ),
   OnBoardingModel(
-    title: AppStrings.yourBeautyStartsHere,
-    description: AppStrings.relaxingMassageDescription,
-    mainImage: AppImages.coverOnBoarding3,
+    title: AppStrings.logSymptomsAndMood,
+    description: AppStrings.logSymptomsAndMoodDescription,
+    mainImage: AppImages.logo,
     smallImage: AppImages.profileOnBoarding3,
   ),
 ];

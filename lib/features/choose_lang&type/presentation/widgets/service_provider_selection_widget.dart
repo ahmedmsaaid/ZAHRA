@@ -1,6 +1,6 @@
-import 'package:base_app/core/localizations/app_strings.g.dart';
-import 'package:base_app/core/utils/assets/app_icons.dart';
-import 'package:base_app/core/widgets/custom_button.dart';
+import 'package:zahra/core/localizations/app_strings.g.dart';
+import 'package:zahra/core/utils/assets/app_icons.dart';
+import 'package:zahra/core/widgets/custom_button.dart';
 
 import '../../../../core/exports/exports.dart';
 import 'custom_choose_service_provider_type.dart';

@@ -1,4 +1,4 @@
-import 'package:base_app/core/styles/app_colors.dart';
+import 'package:zahra/core/styles/app_colors.dart';
 
 import '../exports/exports.dart';
 
